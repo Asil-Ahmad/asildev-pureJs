@@ -1,0 +1,28 @@
+* {
+  font-family: "Poppins", serif;
+  max-width: 1024px;
+  margin: auto;
+}
+
+html {
+  margin: auto;
+}
+
+
+.container {
+  padding: 20px 40px;
+}
+.nocontainer {
+  padding: 10px 10px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.range::-webkit-slider-thumb {
+  background: #00fd0a;
+}

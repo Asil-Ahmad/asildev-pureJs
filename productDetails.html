@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Product Details</title>
+    <script src="productDetails.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="sm:container nocontainer">
+    <h1 class="text-3xl font-semibold tracking-wide">
+      Product<span class="bg-black text-white px-1">Details</span>
+    </h1>
+
+    <section class="py-5">
+      <a href="/index.html" class="border-black border px-2 ">Go Back</a>
+      <div id="listProduct" class="flex sm:flex-row max-sm:flex-col gap-1 pt-10">
+        <div id="leftImages" class="flex sm:flex-row max-sm:flex-col max-sm:flex-col-reverse  m-0 gap-2 w-[40%] max-sm:w-full">
+          <!-- Small images -->
+          <div id="smallImages" class="flex sm:flex-col max-sm:flex-row gap-2 overflow-x-scroll ">
+            <img src="/assets/phlips.webp" alt="" class="w-20" />
+            <img src="/assets/phlips.webp" alt="" class="w-20" />
+            <img src="/assets/phlips.webp" alt="" class="w-20" />
+          </div>
+          <!-- Main image -->
+          <div id="mainImage" class="border flex w-full border-1 "></div>
+        </div>
+        <!-- Details  -->
+        <div id="productDetails" class=" p-1 w-[60%] max-sm:w-full">
+            <div id="price-rating"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

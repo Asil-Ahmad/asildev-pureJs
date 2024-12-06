@@ -1,0 +1,18 @@
+* {
+    font-family: "Poppins", serif;
+    max-width: 768px;
+    margin: auto;
+  }
+  
+  html {
+    margin: auto;
+  }
+  
+  body {
+    background-color: blanchedalmond;
+  }
+  
+  .container {
+    padding: 20px 40px;
+  }
+  
